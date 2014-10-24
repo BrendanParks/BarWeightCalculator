@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="45: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="72dp"
+        android:id="@+id/w45_label"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_edittext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Enter weight" />
+
+    <TextView
+        android:text="35: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w35_label"
+        android:layout_below="@+id/w45_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="25: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w25_label"
+        android:layout_below="@+id/w35_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="10: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w10_label"
+        android:layout_below="@+id/w25_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="5: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w5_label"
+        android:layout_below="@+id/w10_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="2.5: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w2_5_label"
+        android:layout_below="@+id/w5_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w45_edit_label"
+        android:layout_alignTop="@+id/w45_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/w2_5_label"
+        android:layout_toEndOf="@+id/w2_5_label" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w35_edit_label"
+        android:layout_below="@+id/w45_edit_label"
+        android:layout_alignLeft="@+id/w45_edit_label"
+        android:layout_alignStart="@+id/w45_edit_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w25_edit_label"
+        android:layout_below="@+id/w35_edit_label"
+        android:layout_alignRight="@+id/w35_edit_label"
+        android:layout_alignEnd="@+id/w35_edit_label"
+        android:layout_alignLeft="@+id/w35_edit_label"
+        android:layout_alignStart="@+id/w35_edit_label" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w10_edit_label"
+        android:layout_below="@+id/w25_edit_label"
+        android:layout_alignRight="@+id/w25_edit_label"
+        android:layout_alignEnd="@+id/w25_edit_label"
+        android:layout_alignLeft="@+id/w25_edit_label"
+        android:layout_alignStart="@+id/w25_edit_label" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w5_edit_label"
+        android:layout_below="@+id/w10_edit_label"
+        android:layout_alignLeft="@+id/w10_edit_label"
+        android:layout_alignStart="@+id/w10_edit_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w2_5_edit_label"
+        android:layout_below="@+id/w5_edit_label"
+        android:layout_alignRight="@+id/w10_edit_label"
+        android:layout_alignEnd="@+id/w10_edit_label"
+        android:layout_toEndOf="@+id/w2_5_label"
+        android:layout_toRightOf="@+id/w2_5_label" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/calculate_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/w45_edit_label"
+        android:layout_alignEnd="@+id/w45_edit_label" />
+
+</RelativeLayout>
